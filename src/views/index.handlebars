@@ -1,0 +1,60 @@
+    <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
+        <div class="container-md">
+            <a class="navbar-brand" href="#">Sistema Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/consulta">Consultar</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="container-md">
+       
+        <h5 style="margin-top: 1.5rem;">Cadastrar - Agendamento de Potenciais Clientes</h5>
+        <p>Sistema utilizado para agendamento de serviços.</p>
+        <form action="/cadastrar" method="POST">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="name" name="nome" class="form-control" id="nome">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" name="telefone" class="form-control" id="telefone" placeholder="(XX)XXXXX-XXXX">
+            </div>
+            <div class="mb-3">
+                <label for="origem" class="form-label">Origem</label>
+                <select name="origem" id="origem" class="form-select">
+                    <option value="1">Celular</option>
+                    <option value="2">Fixo</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Data do Contato</label>
+                <input class="form-control" type="date" name="date" id="date">
+            </div>
+            <div class="mb-3">
+                <label class="obs" for="obs">Observação</label>
+                <textarea name="obs" id="obs" cols="30" rows="4" class="form-control obs"></textarea>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Cadastrar">
+            </div>
+        </form>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>

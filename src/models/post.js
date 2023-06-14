@@ -1,6 +1,5 @@
 const db = require('./banco')
 
-//Criando o molde de uma tabela do banco
 const Agendamentos = db.sequelize.define("cadastros", {
 
     nome:{

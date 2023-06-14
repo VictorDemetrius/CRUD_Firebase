@@ -23,14 +23,4 @@ const Agendamentos = db.sequelize.define("cadastros", {
 
 // Agendamentos.sync({force: true})
 
-Agendamentos.create({
-    nome: "Roberval Silva",
-     endereco: "Avenida Raposo Tavares",
-     bairro: "Cocuera",
-     cep: 00000000,
-     cidade: "Mogi das Cruzes",
-     estado: "São Paulo",
-     observacao: "Não há observações O.O"
- })
-
 module.exports = Agendamentos
